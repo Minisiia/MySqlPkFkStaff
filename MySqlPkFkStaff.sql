@@ -6,10 +6,10 @@ CREATE DATABASE HumanResourcesDepartment;
 USE HumanResourcesDepartment;
 CREATE TABLE departments(
 	id INT AUTO_INCREMENT NOT NULL,
-    name VARCHAR(50),
-    head VARCHAR(50),
-    phone VARCHAR(15),
-    PRIMARY KEY(id)
+   	name VARCHAR(50),
+    	head VARCHAR(50),
+    	phone VARCHAR(15),
+	PRIMARY KEY(id)
     );
 INSERT INTO departments
 (name, head, phone)
@@ -30,13 +30,13 @@ INSERT INTO positions
 VALUE ('Директор'),('Охранник'),('Шофер'),('Грузчик'),('Продавец'),('Электрик');
 
 create table serviceInformation(
-	id int auto_increment not null,
-	last_name  VARCHAR(20),
+    id int auto_increment not null,
+    last_name  VARCHAR(20),
     first_name VARCHAR(50),
     department_id INT,
     position_id INT,
     phone VARCHAR(15),
-	email VARCHAR(50),
+    email VARCHAR(50),
     education VARCHAR(50),
     date_of_hiring DATE,
     date_of_dismissal DATE,
